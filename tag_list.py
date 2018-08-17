@@ -26,6 +26,7 @@ head = {
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
     'X-Requested-With':'XMLHttpRequest'
 }
+head['Cookie'] = '_ga=GA1.2.1531152702.1534234070; gr_user_id=91d9426a-6e5e-4124-aa1b-2ae8aa5d97b2; Hm_lvt_1c587ad486cdb6b962e94fc2002edf89=1534234072; Hm_lvt_80ec13defd46fe15d2c2dcf90450d14b=1534234789; MEIQIA_EXTRA_TRACK_ID=18mLyhibeZOO2ro9vtCyfcPlVhH; identity=xiangweixiao%40163.com; remember_code=.lFZcxZoVP; unique_token=616796; session=95092205d0e5efee36a3f33a88095c95ed61d50d; user-radar.itjuzi.com=%7B%22n%22%3A%22helianthus%22%2C%22v%22%3A2%7D; gr_session_id_eee5a46c52000d401f969f4535bdaa78=e4b5e803-d61b-4763-99d6-69cf8b560325; gr_cs1_e4b5e803-d61b-4763-99d6-69cf8b560325=user_id%3A616796; _gid=GA1.2.1670999455.1534350111; _gat=1; gr_session_id_eee5a46c52000d401f969f4535bdaa78_e4b5e803-d61b-4763-99d6-69cf8b560325=true; MEIQIA_VISIT_ID=18q99hIUTNtgOYGsYMHpLnVggHO; Hm_lpvt_1c587ad486cdb6b962e94fc2002edf89=1534350134; Hm_lpvt_80ec13defd46fe15d2c2dcf90450d14b=1534350136; acw_tc=MTE1MzQzNTAxMzcxODMuMTkzLjYwLjE5MTc4MWJhZDA2MTUzNDM1MDEzNzczNTQ0NDJlNWZmZTk3MzliYWE4M2Q4NTU1ODY1ZDQ0OTc5ZjY1OGRlMTk1'
 html = requests.get(url,headers=head).text
 soup = BeautifulSoup(html,'lxml')
 #7个标签分类 (倒数第二个tag是搜索标签,要去掉)
